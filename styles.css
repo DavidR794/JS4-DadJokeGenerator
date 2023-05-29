@@ -1,0 +1,120 @@
+/* '.calculator ' = selects using class */
+/* 'button ' = normal element selct 
+  min-height: 100vh;/*sets hight of body to size of browser- zoom level size is the same 
+linear gradient =  divides a screen diagonally with different colours
+display flex= brings everything to centre
+justify content cwntre- brings everything to center horizontally
+align items centre- brings everything to center vertically 
+  
+  
+  
+
+body {
+  margin: 0;
+  background: linear-gradient(to left bottom,lightblue, lightyellow,lightblue );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
+
+.container {
+  width: 1000px;
+  height: 300px;
+  padding: 10px;
+  border: 10px solid;
+  border-color: red;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.heading {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color:red;
+  font-size: 35px;
+
+}
+
+.btn {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+  transform: translateX(-50%);
+  background-color: yellow;
+  color: red;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 40px;
+}
+*/
+
+body {
+  margin: 0;
+  background: linear-gradient(
+    to left bottom,
+    lightblue,
+    lightyellow,
+    lightblue
+  );
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+}
+
+.container {
+  width: 1000px;
+  height: 300px;
+  padding: 10px;
+  border: 10px solid;
+  border-color: red;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: red;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: yellow;
+  color: red;
+  padding: 5px 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* INFORMATION:
+display: flex;  This moves all child elements(inside box) and below
+display: flex; to create a flex container 
+
+align-items: flex-end;'to align the items (including the button) 
+to the bottom of the box.
+justify-content: center;
+
+align-items: center; moves all elements inside
+
+'position: absolute;' to take the button out of the normal flow and 
+allow precise positioning within the box
+  
+position: absolute; to take the button out of the normal flow and 
+allow precise positioning within the box. 
+bottom: 10px; is used to position the button at the bottom with a 10px distance 
+from the edge. 
+left: 50%; and transform: translateX(-50%); 
+are used to center the button horizontally within the box.
+
+
+*/
