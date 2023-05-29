@@ -1,4 +1,5 @@
-// 1. Initialization
+//IMPORT STATEMENTS
+//1.VARIABLE DECLARATIONS...........................................
 const btnE1 = document.getElementById("btn"); //target button from index.HTML
 const jokeE1 = document.getElementById("joke"); //Access the joke and show it in the container
 const apikey = "5bcIRr65A05WwQt9jtcCIw==Ogx4vv8z1BM4ejnW"; //get from profile in apininjas.
@@ -10,8 +11,9 @@ const options = {
   },
 };
 
-// 2. Function getJoke()
-/* async = It allows the getJoke function to use the await keyword inside it to 
+//FUNCTION DEFINITIONS................................................
+/* Function getJoke()    
+async = It allows the getJoke function to use the await keyword inside it to 
 pause the execution of the function until promises are resolved.
 [0] =gets the joke in an object
 [0].joke = see joke by itself 
@@ -33,10 +35,12 @@ async function getJoke() {
   }
 }
 
-// 3. Event listener
+//EVENT LISTENERS.......................................................
 btnE1.addEventListener("click", getJoke);
 
-//FINISH!
+// Main Logic or additional code ..........................................
+
+// Export statements (if applicable)..........................................
 
 /*  EXTRA INFO................
 KEYWORD:
